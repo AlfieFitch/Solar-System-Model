@@ -1,38 +1,24 @@
-
+import java.util.ArrayList;
 public class SolarSystem {
 
     String name;
-    double distance;
-    double period;
-    String planetName;
+    ArrayList<Planets> planets = new ArrayList<Planets>();
 
     public SolarSystem(String name){
         this.name = name;
     }
 
-    public String getName(){
-        return name;
-    }
-
-    public double getDistance(){
-        return distance;
-    }
-
-    public double getPeriod(){
-        return period;
-    }
-
-    public void addPlanet(String name, double distance){
-        this.planetName = name;
-        double rounded = Math.round(distance*1000)/1000.0;
-        double period = Math.round((Math.sqrt(distance*distance*distance)*1000/1000.0));
-        this.distance = rounded;
-        this.period = period;
+    public void addPlanet(String pName, double distance){
+        Planets planet = new Planets(pName, distance);
+        planets.add(planet);
     }
 
     public String toString()
     {
-        String planet = "Mars";
-        return("Star " + this.getName() + " has planets:" + "/n " + this.getDistance("Mars"));
+        String finalstring = "Star " + this.name + " has planets:\n";
+        for(int i = 0; i < planets.size(); i++){
+            finalstring = finalstring + planets.get(i).getName() + "  is " + planets.get(i).getDistance() + "AU from its star, and orbits in " + planets.get(i).getPeriod() + " years\n";
+        }
+        return(finalstring);
     }
 }
