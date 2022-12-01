@@ -21,4 +21,41 @@ public class SolarSystem {
         }
         return(finalstring);
     }
+
+    public String getPlanetByName(String planetName){
+        String planet = null;
+        for(int i = 0; i < planets.size(); i++){
+            if(planets.get(i).getName().equals(planetName)){
+                planet = planets.get(i).getName() + "  is " + planets.get(i).getDistance() + "AU from its star, and orbits in " + planets.get(i).getPeriod() + " years\n";
+            }else{
+                planet = null;
+            }
+        }
+        return planet;
+    }
+
+    public Object furthest(){
+        String planet = null;
+        double tempFurthestDistance = 0;
+        for(int i = 0; i < planets.size(); i++){
+            if(planets.get(i).getDistance() > tempFurthestDistance){
+                tempFurthestDistance = planets.get(i).getDistance();
+                planet = planets.get(i).getName();
+            }
+        }
+        return planet;
+    }
+
+    public Object closest(){
+        String planet = null;
+        double tempClosestDistance = 0;
+        for(int i = 0; i < planets.size(); i++){
+            if(planets.get(i).getDistance() < tempClosestDistance || tempClosestDistance == 0){
+                tempClosestDistance = planets.get(i).getDistance();
+                planet = planets.get(i).getName();
+            }
+        }
+        return planet;
+    }
+
 }

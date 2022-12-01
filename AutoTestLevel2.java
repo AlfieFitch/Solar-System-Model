@@ -64,9 +64,9 @@ public class AutoTestLevel2 {
         } else {
             System.out.println("Solar System Level 2: FAILED");
             System.out.println("Actual Closest: Mercury");
-            System.out.println("You said: " + ourSystem.closest().getName());
+            System.out.println("You said: " + ourSystem.closest());
             System.out.println("Actual Closest: Neptune");
-            System.out.println("You said: " + ourSystem.furthest().getName());
+            System.out.println("You said: " + ourSystem.furthest());
         }
 
 
@@ -74,11 +74,11 @@ public class AutoTestLevel2 {
         if (trappist1ClosestCorrect && trappist1FurthestCorrect) {
             System.out.println("Trappist1 Level 2: Pass!");
         } else {
-            System.out.println("Trappist1 Level 2: FAILED");
+            System.out.println("\nTrappist1 Level 2: FAILED");
             System.out.println("Actual Closest: Trappist1b");
-            System.out.println("You said: " + trappist1.closest().getName());
+            System.out.println("You said: " + trappist1.closest());
             System.out.println("Actual Closest: Trappist1h");
-            System.out.println("You said: " + trappist1.furthest().getName());
+            System.out.println("You said: " + trappist1.furthest());
         }
     }
 }
