@@ -22,4 +22,12 @@ public class Planets{
     public double getPeriod(){
         return period;
     }
+
+    public boolean equals(Planets planet) {
+        if(planet.getName() == this.name && planet.getDistance() == this.distance){
+            return true;
+        }
+        return false;
+    } 
+
 }
