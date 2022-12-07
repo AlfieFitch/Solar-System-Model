@@ -138,7 +138,7 @@ public class AutoTestLevel3 {
         }
 
         System.out.println("\n");//blank line to separate output
-         
+
         //Level 3 Tests - using extended/added methods and constructor
         //Create our solar system
         SolarSystem ourSystemExt = new SolarSystem("Our System", 1.0);
