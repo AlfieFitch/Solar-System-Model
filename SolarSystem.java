@@ -5,7 +5,8 @@
 // 4) All Final variables have been declared and named correctly;
 
 
-// A Class to create a model of a solar system by adding planets which different parameters, such as gravity, distance from star and luminosity. 
+// A Class to create a model of a solar system by adding planets which 
+// different parameters, such as gravity, distance from star and luminosity. 
 // Returns different information about the planet when called, such as habitability and period to orbit its sun.
 
 import java.util.ArrayList;
