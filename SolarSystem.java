@@ -1,3 +1,13 @@
+// How I Improved on feedback:
+// 1) I have ensured that variable names are descriptive and don't just represent the value stored, like 'three';
+// 2) I have seperated my code into logic chunks with statements and added comments before each block;
+// 3) It is trivial to change values, such as the bound used when rounding values.
+// 4) All Final variables have been declared and named correctly;
+
+
+// A Class to create a model of a solar system by adding planets which different parameters, such as gravity, distance from star and luminosity. 
+// Returns different information about the planet when called, such as habitability and period to orbit its sun.
+
 import java.util.ArrayList;
 
 // The Solar system class creates and stores each planet that is added to the solar system object.
